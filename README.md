@@ -1,45 +1,11 @@
-# M2OEP-tjsheeha
+# Casino-Project
+this project was used to learn more about inheritance and polymorphism with C++ and how far I could go with it.
 
-- Your name 
-  - Tyler Sheehan
-  
+The application consists of two games a player can use: Black Jack and Poker.
+As the program runs, a player is given options through the terminal for what they can do in each game. For the case of blackJack it's either hit or stay, and for Poker it's to fold.
 
-- A summary of your program, including a list of Module 2 concepts used.
-  - The program presented is a casino application that provides a user to play one of two games: Black Jack or Poker.
-  - Black Jack, created in my previous open-ended project while may look similar to the user, was modified to make it easier to establish other games in the program. Creating a super class called Game, I made it so black jack was its own class allowing for easily readable code.
-  - The biggest extension to this program would be Poker. Using the game super class, the Poker class which inherits from Game, allows a user to play a very simplified version of Texas Holdem. When I say simplified, a user is only given two options at each turn of the game: to fold or stay.
-  - Along with applying these two games the main method provided user input to play again, and to quit the program. And finally the last thing added was a testing program, which ensured that everything worked in the casino application.
+For poker I only gave the player to fold for each turn as there are no chips implemented to the program.
+There are also a few directions I would like to go with this project such as some decision making on the computer side as well as added chips to bet in the program.
+Finally I would love to add visuals to the program to make it more user friendly.
 
-  - A list of Module 2 concepts used:
-    - 1.) Has-a relationship: A deck class has cards, a game class has a deck
-    - 2.) is-a relationship: Poker is a game, Black Jack is a game
-    - 3.) Testing: there is a separate testing program that validates all classes and methods
-    - 4.) main program complexity: main program allows for user input, utilizes polymorphism, and addresses all classes created in the program.
-
-- Any known bugs at time of submission
-  - there are no known bugs at the time of submitting the project.
-  
-
-- Future work (how you could expand the program with more time)
-  - With more time, the Casino application can work on a few things:
-    - A: adding visuals. Making it so there are actual cards will make it more fun for a player as they can see what is going on.
-    - B: adding a chip class. Since Poker doesn't have much functionality without betting it may be fun to add betting and chips.
-    - C: Computer decision-making. In poker and blackJack a computer is set by default to do certain actions but, it would be nice to have maybe a difficulty setting that predicted certain actions based on their setting.
-
-- Citations for any code not written by you or the instructor
-    - One citation is learning static cast.
-    Static cast allows for datatypes to safely be converted to other types during compile time. It is necessary for my project to convert integer types to my enumerated types for declaring all cards in a deck.
-    link: https://www.geeksforgeeks.org/static_cast-in-cpp/
-
-- The grade you think you have earned, based on the grading rubric below, with justification
-  - The points I belive I should earn for this project are based on the following:
-  - +40 points for main program complexity and usability
-  - +20 points for testing the program
-  - +20 points for has-a relationship: A Deck has Cards
-  - +20 points for has-a relationship: A Game has a Deck
-  - +20 points for is-a relationship: BlackJack is a Game
-  - +20 points for is-a relationship: Poker is a Game
-  - -5 points for lifespan of this project
-  
-In total for this open-ended project I should earn 135 points.
-
+The main purpose of this project was to enhance my knowledge with polymorphism and inheritance through C++. Inheritance is the process of obtaining properties from an already used class and to expand on those properties in another class. Some examples of this include using classes such as Black Jack and Poker, where both inherit from the Games class as well as the Deck class using a "has a " inherited relationship with the cards class. Polymorphism is the process of multiple classes responding to a function that are the same type. In other words they allow different inherited classes respond to a specific function performing the same behavior. The example of polymorphism is in the main class where either black jack or poker is set to be the current game. Whichever one is chosen, both have a play method that is called through polymorphism to start the specific game.
